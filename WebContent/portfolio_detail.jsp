@@ -38,12 +38,6 @@
 			<td>자료 사진</td>
 			<td></td>
 		</tr>
-		<tr>
-			<td colspan="2"  align="center">
-				<input type="submit" name="등록">
-				<input type="reset" name="취소">
-			</td>
-		</tr>
  	</table>
  	<c:forEach items="${portfolio.dataList}" var="file">
  		<img src="uploadFileSave/${file.realFileName}" width="200px" height="200px"/>
