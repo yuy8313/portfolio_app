@@ -8,6 +8,6 @@
 	<Resource name="jdbc/mysql" auth="Container"
 		type="javax.sql.DataSource" driverClassName="com.mysql.cj.jdbc.Driver"
 		url="jdbc:mysql://localhost:3306/testdb?serverTimezone=Asia/Seoul"
-		username="scott" password="tiger" maxActive="20" maxIdle="10"
+		username="root" password="ysu9514" maxActive="20" maxIdle="10"
 		maxWait="-1" />
 </Context>
