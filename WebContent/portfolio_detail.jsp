@@ -132,7 +132,7 @@
 		<tr>
 			<td>자료 사진</td>
 		<td><c:forEach items="${portfolio.dataList}" var="file">
- 			<img src="uploadFileSave/${file.realFileName}" width="200px" height="200px"/>
+ 			<img src="uploadFileSave/${file.realFileName}" width="400px" height="400px"/>
  				<br>
  			</c:forEach>
  		</td>
