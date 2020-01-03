@@ -15,7 +15,10 @@
   
   <style>
   body {
-  	background-image : url('img/img1.jpg');
+  	background-image : url('img/back3.jpg');
+  	background-repeat: no-repeat;
+  	background-size : cover;
+    background-position: center;
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
     color: #000000;
@@ -40,11 +43,11 @@
   }
   .bg-3 { 
     height: 300px;    
-	background-image: url('img/leaf.jpg');
+	background-image: url('img/newyear.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-color : #585858;
-    color: #ffffff;
+    color: #000000;
   }
   .bg-4 { 
     background-color: #2f2f2f; /* Black Gray */
@@ -82,26 +85,7 @@
   </style>
 </head>
 <body>
-
-<!-- Navbar -->
-<nav class="navbar ">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="main.jsp">유우열의 포트폴리오</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="portfolio_list.jsp">포트폴리오</a></li>
-        <li><a href="#">게시판</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<jsp:include page="nav.jsp"/>
 <div class="container">
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
@@ -113,13 +97,12 @@
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
   <h1 class="margin">포트폴리오를 감상하세요!</h1>
-  <a href="portfolio_list.jsp" class="btn btn-danger btn-lg">바로가기</a>
+  <a href="portfolio_list.do" class="btn btn-danger btn-lg">바로가기</a>
 </div>
 
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-center">
-  <h1 class="margin">게시판에 글을 남기세요!</h1>
-  <a href="portfolio_list.jsp" class="btn btn-info btn-lg">바로가기</a>
+  <h1 class="margin">새해복 많이 받으세요!!</h1>
 </div>
 </div>
 <!-- Footer -->

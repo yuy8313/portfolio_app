@@ -3,11 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>포트폴리오 리스트</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Song+Myung&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>포트폴리오 등록</h1>
-  <form method="post"  enctype="multipart/form-data" action="portfolio_register.do">
-	<table border="1">
+  <h1 class="text-center">포트폴리오 등록</h1>
+  <form class="container " method="post"  enctype="multipart/form-data" action="portfolio_register.do">
+	<table class="table">
 		<tr>
 			<td>제목</td>
 			<td><input type="text" name="title"></td>
@@ -50,8 +57,9 @@
 		</tr>
 		<tr>
 			<td colspan="2"  align="center">
-				<input type="submit" name="등록">
-				<input type="reset" name="취소">
+				<input class="btn btn-success btn-lg" type="submit" name="등록">
+				<input class="btn btn-danger btn-lg" type="reset" name="취소">
+				<a href="portfolio_list.do" class="btn btn-info btn-lg">목록</a>
 			</td>
 		</tr>
  	</table>
